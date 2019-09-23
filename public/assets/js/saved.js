@@ -87,7 +87,6 @@ $(document).ready(function () {
             // Constructing HTML to add to the notes modal
             var modalText = $("<div class='container-fluid text-center'>").append(
                 $("<h4>").text("Notes For Article: " + id).attr("article-id", id).addClass("modalID"),
-                $("<hr>"),
                 $("<p id='retrieved-note'>").text(noteText),
                 $("<hr>"),
                 $("<ul class='list-group note-container'>"),

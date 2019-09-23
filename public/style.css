@@ -10,6 +10,7 @@
           height: 307px; 
           margin-top: -25px; 
       }
+      
       #wrapper {
         width: 800px;
         margin-left: auto;
@@ -46,6 +47,10 @@
       /* // added */
       .btn-success {
         background-color: black; 
+      }
+
+      .navbar {
+        margin-top: 0; 
       }
       
       .btn-primary {
