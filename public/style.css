@@ -1,0 +1,45 @@
+      body {  background-image: url(newspaper.jpg);
+              background-size: cover;
+              background-repeat: no-repeat; 
+      }
+      .jumbotron {
+          background-color: white; 
+          font-size: 70px; 
+          font-family: 'Mansalva', cursive;
+          text-align: center; 
+          height: 270px; 
+          margin-top: -25px; 
+      }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        /* background-color: #FCF5C7; */
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      p {
+          color: rgb(252, 85, 238); 
+          font-size: 50px; 
+      }
