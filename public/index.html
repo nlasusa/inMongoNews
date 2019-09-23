@@ -6,19 +6,44 @@
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Abel|Mansalva&display=swap" rel="stylesheet">
   <!-- CSS -->
 	<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="jumbotron">EXTRA! EXTRA!<br><p>Read All About It...</p></div>
-    <div id="wrapper">
-      <h1></h1>
-      <h2><i></i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
-    </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary right-align">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">HOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/saved">SAVED ARTICLES</a>
+              </li>
+            </ul>
+          </div>
+          
+        </nav>
+
+    <div class="jumbotron">EXTRA! EXTRA!<br><div id="read">Read All About It...</div></a>
+      <div id="scraper">
+        <button class="btn btn-primary" type="button">scrape articles</button>
+      </div>
+    </div><br><br><br>
+
+    <div id="article-well" class="container-fluid article-container"></div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script src="/assets/js/index.js"></script>  
   </body>
 </html>

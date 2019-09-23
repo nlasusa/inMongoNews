@@ -7,11 +7,11 @@
           font-size: 70px; 
           font-family: 'Mansalva', cursive;
           text-align: center; 
-          height: 270px; 
+          height: 307px; 
           margin-top: -25px; 
       }
       #wrapper {
-        width: 960px;
+        width: 800px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 5%;
@@ -19,7 +19,7 @@
       #articles {
         display: inline-block;
         overflow: auto;
-        width: 60%;
+        width: 40%;
         height: 700px;
       }
       #notes {
@@ -29,7 +29,6 @@
       textarea, input {
         display: block;
         width: 100%;
-        /* background-color: #FCF5C7; */
       }
       input {
         height: 36px;
@@ -39,7 +38,94 @@
         height: 200px;
         font-size: 18px;
       }
-      p {
+     #read {
           color: rgb(252, 85, 238); 
           font-size: 50px; 
+      }
+
+      /* // added */
+      .btn-success {
+        background-color: black; 
+      }
+      
+      .btn-primary {
+        font-weight: bold;
+        font-size: 30px;
+        border-color: yellow; 
+      }
+      
+      .spinner-border {
+        font-size: 10px;
+        position: relative;
+        bottom: 7px;
+      }
+      
+      .btn-success:hover {
+        color: rgb(240, 243, 245);
+      }
+
+      .article-container {
+        padding-bottom: 25px;
+        width: 900px; 
+      }
+      
+      .card {
+        border-radius: 20px;
+        margin: 20px 0;
+      }
+      
+      .card .card-header {
+        background-color: black;
+        font-family: 'Abel', sans-serif;
+        position: relative;
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+      
+      .card .card-header h3 {
+        color: white;
+      }
+      
+      .card .card-header .btn {
+        font-size: 30px; 
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      
+      .card .card-header .btn.delete {
+        position: absolute;
+        top: 20px;
+        right: 105px;
+      }
+      
+      .card .card-body {
+        font-size: 16px;
+      }
+      
+      .card .card-header .article-link {
+        color: white;
+        font-size: 30px; 
+        display: inline-block;
+        width: 60%;
+      }
+      
+      .scrape-new {
+        cursor: pointer;
+      }
+  
+      textarea {
+        padding: 10px;
+        resize: none;
+        width: 80%;
+      }
+      
+      .bootbox-body .btn {
+        float: right;
+        margin: 5px;
+      }
+      
+      .note.list-group-item .btn {
+        position: relative;
+        bottom: 10px;
       }
