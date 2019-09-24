@@ -49,10 +49,10 @@ function displayArticles() {
 
 $(document).ready(function() {
 
-    // On each page load, retrieve all articles in database
+    // load all articles in db
     displayArticles();
 
-    // Scrape new articles, and alert user if no new ones are found
+    // Scrape new articles
     $("#scraper").on("click", function() {
     
         $("#scraper").html('<button class="btn btn-primary" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>checking for new articles..</button>');

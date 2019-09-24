@@ -7,7 +7,6 @@ function displaySavedArticles() {
         let articlesRendered = 0;
         articles.forEach(article => {
 
-            // Only render article if it HAS been saved in favorites
             if (article.isSaved) {
 
                 articlesRendered = articlesRendered + 1;
@@ -49,7 +48,6 @@ function displaySavedArticles() {
 
 function displayNotes(articleID) {
     $.get("/articles/" + articleID).then(function (data) {
-        // Without the if clause, newly saved articles throw an undefined error
         if (data.note) {
             console.log(data.note.noteText);
             $("#retrieved-note").text(data.note.noteText);
@@ -59,10 +57,10 @@ function displayNotes(articleID) {
 
 $(document).ready(function () {
 
-    // On each page load, retrieve all articles in database
+    // load all articles in db
     displaySavedArticles();
 
-    // Event delegation for deleting article from database
+    // deleting article from database
     $(document.body).on("click", ".delete", function () {
         var id = $(this).prev().attr("data-id");
         $.ajax("/articles/" + id, {
@@ -72,7 +70,7 @@ $(document).ready(function () {
         });
     });
 
-    // Event delegation to open notes modal
+    // open notes modal
     $(document.body).on("click", ".view-note", function () {
         var id = $(this).prev().prev().attr("data-id");
 
@@ -84,7 +82,7 @@ $(document).ready(function () {
             } else {
                 noteText = "";
             }
-            // Constructing HTML to add to the notes modal
+            // add to the notes modal
             var modalText = $("<div class='container-fluid text-center'>").append(
                 $("<h4>").text("Notes For Article: " + id).attr("article-id", id).addClass("modalID"),
                 $("<p id='retrieved-note'>").text(noteText),
@@ -94,7 +92,7 @@ $(document).ready(function () {
                 $("<button class='btn btn-success save'>Save Note</button>")
             );
           
-            // Adding the formatted HTML to the note modal
+            // formatted HTML to note modal
             bootbox.dialog({
                 message: modalText,
                 closeButton: true
@@ -102,7 +100,7 @@ $(document).ready(function () {
         });
     });
 
-    // Event delegation to post new notes
+    // post new notes
     $(document.body).on("click", ".save", function () {
 
         var articleID = $(".modalID").attr("article-id");
