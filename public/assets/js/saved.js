@@ -88,7 +88,7 @@ $(document).ready(function () {
                 $("<p id='retrieved-note'>").text(noteText),
                 $("<hr>"),
                 $("<ul class='list-group note-container'>"),
-                $("<textarea id='new-note' placeholder='New Note' rows='4' cols='60'>"),
+                $("<textarea id='new-note' placeholder='New Note' rows='6' cols='60'>"),
                 $("<button class='btn btn-success save'>Save Note</button>")
             );
           
