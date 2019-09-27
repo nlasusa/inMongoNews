@@ -16,7 +16,7 @@ cheerio
 axios
 
 ## Screenshots and link to see how inMongoNews works 
-*Going to the deployed heroku link: https://lasusan-friend-finder.herokuapp.com/home.html, you will see this home screen. Click"Scrape Article"to get new ones. 
+*Going to the deployed heroku link: https://warm-earth-14140.herokuapp.com/, you will see this home screen. Click"Scrape Article"to get new ones. 
 
 ![screenshot1](screenshot1.png)
 
