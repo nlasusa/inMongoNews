@@ -59,12 +59,6 @@
         border-color: yellow; 
       }
       
-      .spinner-border {
-        font-size: 10px;
-        position: relative;
-        bottom: 7px;
-      }
-      
       .btn-success:hover {
         color: rgb(240, 243, 245);
       }
